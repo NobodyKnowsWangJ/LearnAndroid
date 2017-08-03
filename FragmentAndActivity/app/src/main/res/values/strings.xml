@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">FragmentAndActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello I am second fragment</string>
+    <string name="back_btn_title">BACK</string>
+    <string name="title_activity_sub">SubActivity</string>
+    <string name="action_settings">Settings</string>
+</resources>
