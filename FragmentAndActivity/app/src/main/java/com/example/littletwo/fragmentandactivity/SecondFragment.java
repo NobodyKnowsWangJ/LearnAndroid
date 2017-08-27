@@ -3,6 +3,7 @@ package com.example.littletwo.fragmentandactivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,6 +18,7 @@ public class SecondFragment extends Fragment implements View.OnClickListener{
 
     private Button backBtn;
     private Button toSunBtn;
+    public final static String EXTRA_MESSAGE = "com.mycompony.myfirstapp.MESSAGE";
 
     public SecondFragment() {
         // Required empty public constructor
@@ -45,6 +47,7 @@ public class SecondFragment extends Fragment implements View.OnClickListener{
             }
             case R.id.jumpToSubactivity:{
                 Intent intent = new Intent(getActivity(),SubActivity.class);
+                intent.putExtra(EXTRA_MESSAGE,"AAAA");
                 startActivity(intent);
             }
         }
